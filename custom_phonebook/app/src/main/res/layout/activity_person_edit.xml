@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.alper_arik.quiz.RegisterActivity"
+    android:background="#060075">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nameEditField"
+        android:layout_marginTop="48dp"
+        android:textColor="#FF5B33"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Phone"
+        android:ems="10"
+        android:id="@+id/homePhoneEditField"
+        android:layout_below="@+id/nameEditField"
+        android:textColor="#FF5B33"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Phone"
+        android:ems="10"
+        android:id="@+id/mobilePhoneEditField"
+        android:layout_below="@+id/homePhoneEditField"
+        android:textColor="#FF5B33"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work Phone"
+        android:ems="10"
+        android:id="@+id/workPhoneEditField"
+        android:layout_below="@+id/mobilePhoneEditField"
+        android:textColor="#FF5B33"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:ems="10"
+        android:id="@+id/emailEditField"
+        android:layout_below="@+id/workPhoneEditField"
+        android:textColor="#FF5B33"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/editOKButton"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/editLocationButton"
+        android:layout_below="@+id/emailEditField"
+        android:layout_alignRight="@+id/editOKButton"
+        android:layout_alignEnd="@+id/editOKButton"
+        android:background="@drawable/custom_button" />
+
+</RelativeLayout>

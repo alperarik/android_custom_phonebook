@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#060075">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customRowPhoto"
+        android:src="@drawable/photo" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:id="@+id/customRowNameTextView"
+        android:layout_gravity="clip_horizontal"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FF5B33"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/customRowPhoto" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customRowCall"
+        android:src="@drawable/call"
+        android:layout_toRightOf="@id/customRowNameTextView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customRowMessage"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/message"
+        android:layout_toRightOf="@id/customRowCall"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customRowLocation"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/location"
+        android:layout_toRightOf="@id/customRowMessage"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:id="@+id/customRowMobilePhoneTextView"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/customRowNameTextView"
+        android:layout_marginLeft="55dp"
+        android:textColor="#94ffe2" />
+
+
+</RelativeLayout>
